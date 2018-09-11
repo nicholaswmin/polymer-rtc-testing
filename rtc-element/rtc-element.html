@@ -31,7 +31,13 @@ Sample RTC element with unit-tests
         credentials: {
           type: Object,
           value: function() {
-            return {}
+            return {
+              // @FIXME Add your actual TokBox account credentials
+              // here before running/testing this element.
+              api_key: 1234,
+              token: 'foo-token',
+              session_id: 'foo-session-id'
+            }
           },
           observer: '_initSession'
         }

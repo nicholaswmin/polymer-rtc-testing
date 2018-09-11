@@ -22,6 +22,26 @@ applicable to standard/vendorless WebRTC implementations.
 There's a sample Polymer element in `/rtc-element` with unit-tests which are
 run with the strategy illustrated in this guide.
 
+Add your own [TokBox][tokbox] account credentials in the `credentials` property
+of `rtc-element/rtc-element.html`, like so:
+
+```javascript
+credentials: {
+  type: Object,
+  value: function() {
+    return {
+      // Replace with your actual TokBox account credentials.
+      api_key: 1234,
+      token: 'foo-token',
+      session_id: 'foo-session-id'
+    }
+  },
+  observer: '_initSession'
+}
+```
+
+and then:
+
 ```bash
 $ cd rtc-element
 $ npm install -g polymer-cli mocha
@@ -233,3 +253,4 @@ See: https://github.com/nicholaswmin/polymer-rtc-testing/issues/1.
 [sitespeedio/throttle]: https://github.com/sitespeedio/throttle
 [mocha]: https://mochajs.org/
 [webrtc.org:testing]: https://webrtc.org/testing/
+[tokbox]: https://tokbox.com/
