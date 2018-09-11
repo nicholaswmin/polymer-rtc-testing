@@ -1,0 +1,18 @@
+{
+  "expanded": true,
+  "suites": ["test/*.html"],
+  "plugins": {
+    "local": {
+      "browsers": [
+        "chrome"
+      ],
+      "browserOptions": {
+        "chrome": [
+          "auto-select-desktop-capture-source='Entire screen'",
+          "use-fake-device-for-media-stream",
+          "use-fake-ui-for-media-stream"
+        ]
+      }
+    }
+  }
+}

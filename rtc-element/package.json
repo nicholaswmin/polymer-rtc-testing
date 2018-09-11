@@ -1,0 +1,23 @@
+{
+  "name": "rtc-element",
+  "version": "0.1.0",
+  "description": "Sample OpenTok RTC element with unit-tests",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/run.js"
+  },
+  "keywords": [
+    "opentok",
+    "webrtc",
+    "polymer",
+    "guide"
+  ],
+  "author": "@nicholaswmin",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
